@@ -1,0 +1,114 @@
+
+*{
+    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+a:visited, a:link, a:focus, a:hover, a:active{
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header .logotipo{
+    width: 45%;
+}
+
+.redes ul li i{
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.redesMovil{
+    position:fixed;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.fade-slider{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+.bannerEstatico{
+    background: rgba(0, 0, 0, 0);
+    height: 200px;
+}
+
+.redes ul li i.fa-facebook{
+    background: #1475E0;
+}
+.redes ul li i.fa-instagram{
+    background: #b19768;
+}
+.redes ul li i.fa-youtube{
+    background: #f95f62;
+}
+.redes ul li i.fa-snapchat{
+    background: #ff9052;
+}
+.redes ul li i.fa-twitter{
+    background: #00a6ff;
+}
+.fa-bars{
+    font-size: 35px;
+}
+/*
+ESCRITORIO
+*/
+
+/*
+1024(992)px -> Tableta Horizontal 
+*/
+@media(max-width:1199px) and (min-width:992px){
+
+}
+/*
+768(768)px -> Tableta Vertical 
+*/
+@media(max-width:991px) and (min-width:768px){
+    header .logotipo{
+        width: 55%;
+    }
+}
+/*
+576 (576)px -> Movil Horizontal
+*/
+@media(max-width:767px) and (min-width:576px){
+    header .logotipo{
+        width: 65%;
+    }
+    .fade-slider{
+        height: 72px;
+    }
+}
+/*
+320 px -> Movil Vertical
+*/
+@media(max-width:575px){
+    header .logotipo{
+        width: 100%;
+    }
+    .fade-slider{
+        height: 54px;
+    }
+}
+
+.fa-bars, .fa-magnifying-glass{
+    color: white;
+}
