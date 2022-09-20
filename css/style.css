@@ -44,6 +44,35 @@ header .logotipo{
     left: 0;
 }
 
+/* MENU */
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 70px;
+    display: none;
+    
+}
+.menu .nav{
+    margin-top: 10%;
+}
+.nav-link{
+    color: #ff9052;
+}
+
+.btnClose{
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    color: white;
+}
 
 .bannerEstatico{
     background: rgba(0, 0, 0, 0);
@@ -76,7 +105,13 @@ ESCRITORIO
 1024(992)px -> Tableta Horizontal 
 */
 @media(max-width:1199px) and (min-width:992px){
-
+    .menu .nav{
+        margin-top: 15%;
+    }
+    .btnClose{
+        right: 5%;
+        top: 10px;
+    }
 }
 /*
 768(768)px -> Tableta Vertical 
@@ -84,6 +119,13 @@ ESCRITORIO
 @media(max-width:991px) and (min-width:768px){
     header .logotipo{
         width: 55%;
+    }
+    .btnClose{
+        right: 5%;
+        top: 10px;
+    }
+    .menu .nav{
+        margin-top: 20%;
     }
 }
 /*
@@ -96,6 +138,14 @@ ESCRITORIO
     .fade-slider{
         height: 72px;
     }
+    .btnClose{
+        left: 5%;
+        top: 5px;
+    }
+    .menu .nav{
+        margin-top: 25%;
+    }
+
 }
 /*
 320 px -> Movil Vertical
@@ -106,6 +156,15 @@ ESCRITORIO
     }
     .fade-slider{
         height: 54px;
+    }
+    .btnClose{
+        left: 5%;
+        top: 10px;
+    }
+    .menu .nav{
+        margin-top: 25%;
+        font-size: 20px;
+        line-height: 40px;
     }
 }
 

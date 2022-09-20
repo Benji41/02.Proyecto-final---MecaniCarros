@@ -40,3 +40,13 @@ $(window).scroll(function(){
         }
     }
 )
+$(".fa-bars").click(
+    function(){
+        $(".menu").fadeIn("fast");
+}
+)
+$(".btnClose").click(
+    function(){
+        $(".menu").fadeOut("fast")
+    ;}
+)
