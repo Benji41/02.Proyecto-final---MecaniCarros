@@ -34,6 +34,7 @@ header .logotipo{
     position:fixed;
     bottom: -10px;
     left: 50%;
+    z-index: 10;
     transform: translate(-50%,0%);
 }
 
@@ -66,13 +67,40 @@ header .logotipo{
 .nav-link{
     color: #ff9052;
 }
-
+.fa-bars, .fa-magnifying-glass{
+    color: white;
+}
 .btnClose{
     position: absolute;
     top: 100px;
     right: 25px;
     color: white;
 }
+.bannerEstatico{
+    background: rgba(0, 0, 0, 0);
+    height: 200px;
+}
+
+.redes ul li i.fa-facebook{
+    background: #1475E0;
+}
+.redes ul li i.fa-instagram{
+    background: #b19768;
+}
+.redes ul li i.fa-youtube{
+    background: #f95f62;
+}
+.redes ul li i.fa-snapchat{
+    background: #ff9052;
+}
+.redes ul li i.fa-twitter{
+    background: #00a6ff;
+}
+.fa-bars{
+    font-size: 35px;
+}
+
+
 
 
 /*
@@ -84,8 +112,9 @@ GRID CATEGORIAS
     border-bottom: 0px;
     border-left: 8px solid white;
     border-right: 8px solid white;
+    cursor: pointer;
+    transition: 1s all;
 }
-
 .grid .columna1{
     width: 40%;
 }
@@ -142,34 +171,35 @@ GRID CATEGORIAS
     font-weight: 100;
     font-size: 20px;
 }
-
-
-.bannerEstatico{
-    background: rgba(0, 0, 0, 0);
-    height: 200px;
+.grid figure p:hover{
+    color: rgba(255, 144, 82, 0.7);
 }
 
-.redes ul li i.fa-facebook{
-    background: #1475E0;
-}
-.redes ul li i.fa-instagram{
-    background: #b19768;
-}
-.redes ul li i.fa-youtube{
-    background: #f95f62;
-}
-.redes ul li i.fa-snapchat{
-    background: #ff9052;
-}
-.redes ul li i.fa-twitter{
-    background: #00a6ff;
-}
-.fa-bars{
-    font-size: 35px;
-}
+
+
 /*
-ESCRITORIO
+CONTENIDO
 */
+.contenidoInicio{
+    transform: translate(0%, -2%);
+}
+
+.introArticulo{
+    position: relative;
+}
+
+.fecha{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    padding: 5px 10px;
+    color: #aaa;
+    font-size: 14px;
+    background-size: cover;
+    background-position: center top;
+    height: 40px;
+    background: url(/img/globo.jpg);
+}
 
 /*
 1024(992)px -> Tableta Horizontal 
@@ -191,8 +221,8 @@ ESCRITORIO
         width: 55%;
     }
     .btnClose{
-        right: 5%;
-        top: 10px;
+        right: 15%;
+        top: 70px;
     }
     
     .menu .nav{
@@ -222,7 +252,6 @@ ESCRITORIO
 .grid figure p{
     font-size: 18px;
 }
-
 }
 /*
 576 (576)px -> Movil Horizontal
@@ -235,8 +264,8 @@ ESCRITORIO
         height: 72px;
     }
     .btnClose{
-        left: 5%;
-        top: 5px;
+        left: 15%;
+        top: 50px;
     }
 
     .menu .nav{
@@ -269,7 +298,6 @@ ESCRITORIO
     .grid figure p{
         font-size: 16px;
     }
-
 }
 /*
 320 px -> Movil Vertical
@@ -324,6 +352,3 @@ ESCRITORIO
     }
 }
 
-.fa-bars, .fa-magnifying-glass{
-    color: white;
-}
