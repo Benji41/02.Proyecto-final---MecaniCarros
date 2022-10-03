@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="css/jquery.jdSlider.css">
   <script src="js/jquery.jdSlider-latest.js"></script>
 
+  <script src="/js/pagination.min.js"></script>
+
 
   <title>Mecanicarros</title>
   <link rel="icon" href="img/Color logo - no background.svg">
@@ -102,7 +104,7 @@
       </div>
     </div>
   </div>
-  <!-- CONTENIDO -->
+  <!-- GRID -->
   <div class=" container-fluid bg-white py-2 py-md-5 grid">
     <div class=" container p-0">
       <div class=" d-flex ">
@@ -139,26 +141,111 @@
         <div class=" container ">
           <div class="row">
             <!-- COLUMNA IZQUIERDA-->
-            <div class="col-12  col-lg-9  p-0 pr-lg-5">
+            <div class="col-12  col-md-8 col-lg-9  p-0 pr-lg-5">
               <!-- ARTICULO 01-->
               <div class="row">
                 <div class=" col-12 col-lg-5">
-                    <h4 class="d-block d-lg-none py-3">Type something here</h4>
-                    <div class="fecha d-block d-lg-none py-3">30.09.2018</div>
+                    <h5 class="d-block d-lg-none py-3">Type something here</h5>
                   <img src="/img/ad01.jpg" alt=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quo facilis veniam voluptatum distinctio natus libero, aut ex fuga eius exercitationem vitae iusto animi reiciendis at non asperiores vero sed?" class="img-fluid" width="100%">
                 </div>
                 <div class=" col-12 col-lg-7 introArticulo">
                   <h4 class=" d-none d-lg-block">Type something here</h4>
-                  <p class=" my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt molestias sequi quae est odit autem. Dolore sapiente beatae totam optio. Officiis incidunt perferendis unde perspiciatis, culpa quae doloremque modi!</p>
+                  <p class=" my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt molestias sequi quae est odit autem. Dolore sapiente beatae totam optio. Officiis incidunt perferendis unde perspiciatis, culpa quae doloremque modi!</p>
                   <a href="#" class="float-right">Leer Más</a>
-                  <div class="fecha d-none d-lg-block">30.09.2018</div>
+                  <div class="fecha">30.09.2018</div>
                 </div>
               </div>
-              <hr style="border: 1px solid #79FF39;">
+
+              <hr class=" mb-4 mb-lg-5" style="border: 1px solid #79FF39;">
+
+               <!-- ARTICULO 02-->
+               <div class="row">
+                <div class=" col-12 col-lg-5">
+                    <h5 class="d-block d-lg-none py-3">Type something here</h5>
+                  <img src="/img/ad01.jpg" alt=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quo facilis veniam voluptatum distinctio natus libero, aut ex fuga eius exercitationem vitae iusto animi reiciendis at non asperiores vero sed?" class="img-fluid" width="100%">
+                </div>
+                <div class=" col-12 col-lg-7 introArticulo">
+                  <h4 class=" d-none d-lg-block">Type something here</h4>
+                  <p class=" my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt molestias sequi quae est odit autem. Dolore sapiente beatae totam optio. Officiis incidunt perferendis unde perspiciatis, culpa quae doloremque modi!</p>
+                  <a href="#" class="float-right">Leer Más</a>
+                  <div class="fecha">30.09.2018</div>
+                </div>
+              </div>
+
+              <hr class=" mb-4 mb-lg-5" style="border: 1px solid #79FF39;">
+
+              <!--PUBLICIDAD-->
+              <div class="d-block d-lg-none">
+                <img src="/img/ad02.jpg" class="img-fluid" width="100%">
+              </div>
+
+              <!-- ARTICULO 03-->
+              <div class="row">
+                <div class=" col-12 col-lg-5">
+                    <h5 class="d-block d-lg-none py-3">Type something here</h5>
+                  <img src="/img/ad01.jpg" alt=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quo facilis veniam voluptatum distinctio natus libero, aut ex fuga eius exercitationem vitae iusto animi reiciendis at non asperiores vero sed?" class="img-fluid" width="100%">
+                </div>
+                <div class=" col-12 col-lg-7 introArticulo">
+                  <h4 class=" d-none d-lg-block">Type something here</h4>
+                  <p class=" my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt molestias sequi quae est odit autem. Dolore sapiente beatae totam optio. Officiis incidunt perferendis unde perspiciatis, culpa quae doloremque modi!</p>
+                  <a href="#" class="float-right">Leer Más</a>
+                  <div class="fecha">30.09.2018</div>
+                </div>
+              </div>
+
+              <hr class=" mb-4 mb-lg-5" style="border: 1px solid #79FF39;">
+               <div class=" container d-none d-md-block">
+                <ul class=" pagination justify-content-center"></ul>
+               </div>
             </div>
             <!-- COLUMNA DERECHA-->
-            <div class=" d-none d-lg-block col-lg-3 bg-success p-5"></div>
-          </div>
+            <div class=" d-none d-md-block pt-md-4 pt-lg-0 col-md-4 col-lg-3">
+              <!--SOBRE MI-->
+              <div class="sobreMi">
+                <h4>Sobre mi</h4>
+                <img src="/img/sobreMi.jpg" alt="Lorem" class="img-fluid my-1">
+                <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+
+              <!--PUBLICIDAD-->
+              <div class="my-4">
+                <img src="/img/ad02.jpg" class="img-fluid">
+              </div>
+
+              <!--COMENTARIOS RECIENTES-->
+              <div class="my-4">
+                <h4>Comentarios Recientes</h4>
+                <!--COM1-->
+                <div class="d-flex my-3">
+                  <div class="w-100 w-xl-50 pr-3 pt-2">
+                    <img src="/img/com01.jpg" alt="lorem" class="img-fluid">
+                  </div>
+                  <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <!--COM2-->
+                <div class="d-flex my-3">
+                  <div class="w-100  w-xl-50 pr-3 pt-2">
+                    <img src="/img/com01.jpg" alt="lorem" class="img-fluid">
+                  </div>
+                  <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <!--COM3-->
+                <div class="d-flex my-3">
+                  <div class="w-100  w-xl-50 pr-3 pt-2">
+                    <img src="/img/com01.jpg" alt="lorem" class="img-fluid">
+                  </div>
+                  <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <!--PUBLICIDAD-->
+              <div class="ads my-4">
+                <img src="/img/ad02.jpg" class="img-fluid">
+              </div>
+              <!--PUBLICIDAD-->
+              <div class="ads my-4">
+                <img src="/img/ad02.jpg" class="img-fluid">
+              </div>
+            </div>
         </div>
       </div>
     <!-- REDES SOCIALES PARA MOVIL-->
