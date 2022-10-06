@@ -9,14 +9,11 @@ $(".fade-slider").jdSlider({
     speed: 3000
 });
 
-var alturaBanner = $(".fade-slider").height();
-$(".bannerEstatico").css({
-    "height":alturaBanner+"px"
-})
+
 
 $(window).scroll(function(){
         var posY = window.pageYOffset
-        if (posY > alturaBanner) {
+        if (posY > $(".fade-slider").height()) {
             $("header").css({
                 "background":"white"
             })
