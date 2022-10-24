@@ -81,6 +81,28 @@ header .logotipo{
     background: rgba(0, 0, 0, 0);
 }
 
+.textoBanner{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.textoBanner h1{
+    font-family: 'chewy',cursive;
+    font-size: 60px;
+    color: white;
+}
+
+.textoBanner h5{
+    line-height: 30px;
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+}
+
 .redes ul li i.fa-facebook{
     background: #1475E0;
 }
@@ -188,19 +210,45 @@ GRID CATEGORIAS
     color: rgba(255, 144, 82, 0.7);
 }
 
+footer{
+    background: black;
+}
 
+/*BREAD CRUMB*/
+.breadcrumb-item+.breadcrumb-item::before{
+    background: url(/img/separador.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: url(/img/espacio.png);
+    width: 60px;
+    left: -10px;
+    line-height: 50px;
+}
+
+.breadcrumb-item.inicio{
+    position: relative;
+    top: 13px;
+}
 
 /*
 CONTENIDO
 */
-/*
+
 .contenidoInicio{
     transform: translate(0%, -2%);
-}*/
+}
 
 .introArticulo{
     position: relative;
 }
+.strokeme {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 0.25px -1px 0 #000, -1px 0.25px 0 #000, 0.25px 0.25px 0 #000;
+  }
+
 
 .fecha{
     position: absolute;
@@ -214,8 +262,23 @@ CONTENIDO
     background-position: center top;
     height: 40px;
 }
+
+.fechaArticulo{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    padding: 12px 32px;
+    color: #aaa;
+    font-size: 15px;
+    background: url(/img/globo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60px;
+}
+
+
 .page-item.active .page-link{
-    background: #FF398E;
+    background: #ff9052;
     color: white;
     border: 1px solid #bbb;
 }
@@ -299,6 +362,58 @@ GRIDFOOTER CATEGORIAS
 .gridFooter figure p:hover{
     color: rgba(255, 144, 82, 0.7);
 }
+
+/* SCROLLUP*/
+#scrollUp{
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: url(/img/flecha.jpg);
+}
+/*PRELOAD*/
+#preload{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+#porcentajeCarga{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #ff9052;
+    top: 52%;
+    font-size: 40px;
+    font-weight: 100;
+}
+#lineaCarga{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0%;
+    background: #666;
+}
+#rellenoCarga{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #00a6ff;
+}
+#estadoCarga{
+    position: absolute;
+    background: url(/img/loader.gif);
+    background-position: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+}
 /*
 1024(992)px -> Tableta Horizontal 
 */
@@ -309,6 +424,14 @@ GRIDFOOTER CATEGORIAS
     .btnClose{
         right: 5%;
         top: 10px;
+    }
+
+    .textoBanner h1{
+        font-size: 40px;
+    }
+
+    .textoBanner h5{
+        font-size: 17px;
     }
 }
 /*
@@ -348,11 +471,54 @@ GRIDFOOTER CATEGORIAS
     }
 
     .grid figure p{
-        font-size: 18px;
+        font-size: 12px;
     }
+    
+    .tituloArticulo{
+        font-size: 20px;
+    }
+
+    /*BREAD CRUMB*/
+    .breadcrumb-item+.breadcrumb-item::before{
+        width: 40px;
+        background-size: contain;
+    }
+
+    .breadcrumb-item.inicio, .breadcrumb-item.active{
+        font-size: 13px;
+    }
+
     .fecha{
         margin-top: 13px;
         right: 2px;
+    }
+
+    .fechaArticulo{
+        top: -15px;
+        left: 15px;
+        padding: 7px 18px;
+        font-size: 11px;
+        height: 40px;
+    }
+
+    .tituloArticulo{
+        font-size: 15px;
+    }
+
+    .grid figure{
+        position: relative;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+
+    .textoBanner h1{
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    .textoBanner h5{
+        font-size: 16px;
     }
 }
 /*
@@ -400,9 +566,29 @@ GRIDFOOTER CATEGORIAS
     .grid figure p{
         font-size: 16px;
     }
+
+    /*BREAD CRUMB*/
+    .breadcrumb-item+.breadcrumb-item::before{
+        width: 40px;
+        background-size: contain;
+    }
+
+    .breadcrumb-item.inicio, .breadcrumb-item.active{
+        font-size: 13px;
+    }
+
     .fecha{
         margin-top: 13px;
     }
+
+    .fechaArticulo{
+        top: 1px;
+        left: 15px;
+        padding: 8px 13px;
+        font-size: 13px;
+        height: 40px;
+    }
+
     
 }
 
@@ -458,11 +644,38 @@ GRIDFOOTER CATEGORIAS
         font-size: 14px;
     }
 
+    /*BREAD CRUMB*/
+    .breadcrumb-item+.breadcrumb-item::before{
+        width: 40px;
+        background-size: contain;
+    }
+
+    .breadcrumb-item.inicio, .breadcrumb-item.active{
+        font-size: 13px;
+    }
+    
     .fecha{
         margin-top: 15px;
         font-size: 9px;
         height: 28px;
         right: 3px;
     }
+
+    .fechaArticulo{
+        top: 1px;
+        left: 15px;
+        padding: 8px 13px;
+        font-size: 13px;
+        height: 40px;
+    }
+    
+    .tituloArticulo{
+        font-size: 18px;
+    }
+
+    .textoArticulo{
+        font-size: 14px;
+    }
+
 }
 
